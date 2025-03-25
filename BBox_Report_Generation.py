@@ -8,12 +8,7 @@ from docx.oxml.ns import nsdecls
 from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from docx.oxml import OxmlElement, ns
-import numpy as np
-import seaborn as sns
 import os
-from collections import defaultdict
-from sklearn.metrics import confusion_matrix
-import math
 
 def set_cell_background_color(cell, color):
     cell._element.get_or_add_tcPr()
